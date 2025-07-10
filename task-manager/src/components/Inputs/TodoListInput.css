@@ -1,0 +1,50 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9fafb; /* gray-50 */
+  border: 1px solid #f3f4f6; /* gray-100 */
+  padding: 0.5rem 0.75rem; /* py-2 px-3 */
+  border-radius: 0.375rem; /* rounded-md */
+  margin-top: 0.5rem; /* mt-2 */
+  margin-bottom: 0.75rem; /* mb-3 */
+}
+.todo-text {
+  font-size: 0.75rem; /* text-xs */
+  color: #000000; /* text-black */
+}
+.todo-span {
+  font-size: 0.75rem; /* text-xs */
+  color: #9ca3af; /* text-gray-400 */
+  font-weight: 600; /* font-semibold */
+  margin-right: 0.5rem; /* mr-2 */
+}
+.button {
+  cursor: pointer;
+}
+.todo-outline {
+  font-size: 1.125rem; /* text-lg */
+  color: #ef4444; /* text-red-500 */
+}
+.todo-item-row {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 1.25rem; /* gap-5 → 20px */
+  margin-top: 1rem; /* mt-4 → 16px */
+}
+.todo-input {
+  width: 100%; /* w-full */
+  font-size: 13px; /* text-[13px] */
+  color: black; /* text-black */
+  outline: none; /* outline-none */
+  background-color: white; /* bg-white */
+  border: 1px solid #f3f4f6; /* border & border-gray-100 */
+  padding: 0.5rem 0.75rem; /* px-3 py-2 → 12px 8px */
+  border-radius: 0.375rem; /* rounded-md → 6px */
+}
+.wrap {
+  white-space: nowrap;
+}
+.button-text {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}

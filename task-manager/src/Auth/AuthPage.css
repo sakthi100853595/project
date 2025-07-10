@@ -1,0 +1,190 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.forms-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section-title {
+  /* font-family: "Petit Formal Script", cursive; */
+  font-family: "Poppins", "sans-serif";
+  font-size: 50px;
+  letter-spacing: 1px;
+  /*to create a color gradient in text-color then you have to follow this step*/
+  /* background: linear-gradient(to left, #651fff, #9f2b68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; */
+  /* color: #651fff; */
+  /* color: #9f2b68; */
+  font-weight: bold;
+  color: white;
+  /* background: linear-gradient(to right, #ffeb99, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text; */
+  -webkit-text-fill-color: #ffffff;
+}
+
+.tag-line {
+  /* font-family: "Petit Formal Script", cursive; */
+  font-family: "Poppins", "sans-serif";
+  font-size: 25px;
+  text-align: center;
+  /* color: #651fff;
+    background: linear-gradient(to left, #9f2b68, #651fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; */
+  font-weight: bold;
+  color: white;
+  /* background: linear-gradient(to right, #ffeb99, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.forms {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.form-wrapper {
+  animation: hideLayer 0.3s ease-out forwards;
+}
+
+.form-wrapper.is-active {
+  animation: showLayer 0.3s ease-in forwards;
+}
+
+@keyframes showLayer {
+  50% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+
+@keyframes hideLayer {
+  0% {
+    z-index: 1;
+  }
+  49.999% {
+    z-index: 1;
+  }
+}
+
+.switcher {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  /* color: #999; */
+  /* background: linear-gradient(180deg, #651fff, #9f2b68);
+    -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* font-weight: bold; */
+  /* background-color: transparent; */
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  /* background: linear-gradient(to right, #ffeb99, #ffffff); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  border: none;
+  outline: none;
+  transform: translateX(0);
+  transition: all 0.3s ease-out;
+}
+
+.form-wrapper.is-active .switcher-login {
+  /* background: linear-gradient(180deg, #651fff, #9f2b68);
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+  /* font-weight: bold; */
+  font-weight: bold;
+  color: white;
+  /* background: linear-gradient(to right, #ffeb99, #ffffff); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transform: translateX(90px);
+}
+
+.form-wrapper.is-active .switcher-signup {
+  /* background: linear-gradient(180deg, #651fff, #9f2b68);
+    -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* font-weight: bold; */
+  font-weight: bold;
+  color: white;
+  /* background: linear-gradient(to right, #ffeb99, #ffffff); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transform: translateX(-90px);
+}
+
+.underline {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: inherit;
+  display: block;
+  width: inherit;
+  height: inherit;
+  background-color: currentColor;
+  transition: transform 0.2s ease-out;
+}
+
+.switcher-login .underline::before {
+  transform: translateX(101%);
+}
+
+.switcher-signup .underline::before {
+  transform: translateX(-101%);
+}
+
+.form-wrapper.is-active .underline::before {
+  transform: translateX(0);
+}
+
+/* Fade In & Out Animation */
+.fade-enter {
+  opacity: 0;
+  transform: translateX(0);
+}
+.fade-enter-active {
+  opacity: 1;
+  /* transform: translateY(0); */
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  /* transform: translateY(20px); */
+  transition: opacity 0.5s ease-in-out;
+}

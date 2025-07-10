@@ -1,0 +1,38 @@
+.manage-users-section-spacing {
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .header-flex {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.header-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.button-container {
+  display: flex;
+}
+.text-size {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+.grid-columns-responsive {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* equivalent to gap-4 */
+  margin-top: 1rem; /* equivalent to mt-4 */
+}
+
+@media (min-width: 768px) {
+  .grid-cols-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

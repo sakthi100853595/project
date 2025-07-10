@@ -1,0 +1,24 @@
+.tooltip-container {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-md */
+  border-radius: 0.5rem; /* rounded-lg = 8px */
+  padding: 0.5rem; /* p-2 = 8px */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+}
+
+.tooltip-label-text {
+  font-size: 0.75rem; /* text-xs = 12px */
+  font-weight: 600; /* font-semibold */
+  color: #6b21a8; /* text-purple-800 */
+  margin-bottom: 0.25rem; /* mb-1 = 4px */
+}
+
+.tooltip-description-text {
+  font-size: 0.875rem; /* text-sm = 14px */
+  color: #4b5563; /* text-gray-600 */
+}
+.tooltip-span-text {
+  font-size: 0.875rem; /* text-sm = 14px */
+  font-weight: 500; /* font-medium */
+  color: #111827; /* text-gray-900 */
+}

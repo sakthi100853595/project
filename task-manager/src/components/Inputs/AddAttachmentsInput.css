@@ -1,0 +1,66 @@
+.attachments-input {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9fafb; /* Tailwind's gray-50 */
+  border: 1px solid #f3f4f6; /* Tailwind's gray-100 */
+  padding: 0.5rem 0.75rem; /* py-2 px-3 */
+  border-radius: 0.375rem; /* rounded-md */
+  margin-bottom: 0.75rem; /* mb-3 */
+  margin-top: 0.5rem; /* mt-2 */
+}
+.flex-container {
+  flex: 1; /* flex-1 */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.75rem; /* gap-3 */
+  border: 1px solid #f3f4f6; /* border border-gray-100 */
+}
+.text-color {
+  color: #9ca3af; /* This is the equivalent of text-gray-400 in Tailwind CSS */
+}
+.para-text {
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  color: #000000; /* Equivalent to text-black */
+}
+.button {
+  cursor: pointer;
+}
+.outline {
+  font-size: 1.125rem; /* Equivalent to text-lg */
+  color: #f87171; /* Equivalent to text-red-500 */
+}
+.file-link {
+  display: flex;
+  align-items: center; /* Equivalent to items-center */
+  gap: 1.25rem; /* Equivalent to gap-5 (5 * 0.25rem = 1.25rem) */
+  margin-top: 1rem; /* Equivalent to mt-4 (4 * 0.25rem = 1rem) */
+}
+.file-link-container {
+  flex: 1;
+  display: flex;
+  align-items: center; /* Equivalent to items-center */
+  gap: 0.75rem; /* Equivalent to gap-3 (3 * 0.25rem = 0.75rem) */
+  border: 1px solid #f3f4f6; /* Equivalent to border border-gray-100 */
+  border-radius: 0.375rem; /* Equivalent to rounded-md */
+  padding-left: 0.75rem; /* Equivalent to px-3 (3 * 0.25rem = 0.75rem) */
+  padding-right: 0.75rem; /* Equivalent to px-3 */
+}
+.file-link-text {
+  color: #9ca3af; /* Equivalent to text-gray-400 in Tailwind */
+}
+.input-field {
+  width: 100%;
+  font-size: 13px;
+  color: black;
+  outline: none;
+  background-color: white;
+  padding-top: 0.5rem; /* py-2 = 0.5rem */
+  padding-bottom: 0.5rem;
+}
+.wrap {
+  white-space: nowrap;
+}
+.button-text {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}

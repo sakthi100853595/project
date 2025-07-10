@@ -1,0 +1,79 @@
+.side-menu {
+  width: 16rem;
+  height: calc(100vh - 61px);
+  background-color: white;
+  border-right: 1px solid;
+  border-color: rgba(229, 231, 235, 0.5);
+  position: sticky;
+  top: 61px;
+  z-index: 20;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+  padding-top: 1.25rem;
+}
+
+.profile-image {
+  position: relative;
+}
+.picture {
+  width: 5rem;
+  height: 5rem;
+  background-color: #94a3b8;
+  border-radius: 9999px;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  background-color: #9f2b68; /* or replace with a hex like #3b82f6 */
+  padding: 0.125rem 0.75rem;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.user-name {
+  color: #030712;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.user-email {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 15px;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+.menu-button .icon {
+  font-size: 1.25rem;
+}
+
+.menu-button.active {
+  color: #9f2b68; /* Replace with actual color like #3b82f6 if needed */
+  background: linear-gradient(
+    to right,
+    rgba(239, 246, 255, 0.4),
+    rgba(219, 234, 254, 0.5)
+  );
+  border-right: 3px solid #9f2b68; /* Or specific color */
+}

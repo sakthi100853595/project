@@ -1,0 +1,101 @@
+.dash {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+}
+
+.col-span-3 {
+  grid-column: span 3; /* Span across 3 columns */
+}
+.custom-heading {
+  font-size: 1.25rem; /* text-xl */
+}
+
+@media (min-width: 768px) {
+  .custom-heading {
+    font-size: 1.5rem; /* text-2xl for md screens */
+  }
+}
+.custom-paragraph {
+  font-size: 0.75rem; /* 12px */
+  color: #9ca3af;
+  margin-top: 0.375rem; /* 6px */
+}
+
+@media (min-width: 768px) {
+  .custom-paragraph {
+    font-size: 13px;
+  }
+}
+
+.infocard-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem; /* gap-3 = 12px */
+  margin-top: 1.25rem; /* mt-5 = 20px */
+}
+
+@media (min-width: 640px) {
+  .infocard-box {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+@media (min-width: 768px) {
+  .infocard-box {
+    grid-template-columns: repeat(4, 1fr); /* md:grid-cols-4 */
+    gap: 1.5rem; /* md:gap-6 = 24px */
+  }
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* gap-6 = 24px */
+  margin-top: 1rem; /* my-4 = 16px top and bottom */
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+    margin-top: 1.5rem; /* md:my-6 = 24px top and bottom */
+    margin-bottom: 1.5rem;
+  }
+}
+
+.chart-container {
+  display: flex;
+  align-items: center; /* items-center */
+  justify-content: space-between; /* justify-between */
+}
+
+.chart-text {
+  font-weight: 500; /* Tailwind's 'font-medium' maps to font-weight: 500 */
+}
+
+@media (min-width: 768px) {
+  .custom-col-span {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.custom-flex {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between items horizontally */
+}
+
+.custom-text {
+  font-size: 1.125rem; /* text-lg = 18px */
+  line-height: 1.75rem; /* default line-height for text-lg = 28px */
+}
+
+.custom-text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}

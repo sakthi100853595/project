@@ -1,0 +1,67 @@
+.manage-tasks-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.manage-tasks-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .manage-tasks-layout {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.manage-tasks-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px; /* or 0.75rem */
+}
+.manage-tasks-heading {
+  font-size: 1.25rem; /* This is equivalent to text-xl (20px) */
+  font-weight: 500; /* This is equivalent to font-medium */
+}
+.hidden-flex-large {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .hidden-flex-large {
+    display: none;
+  }
+}
+
+.text-size {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+.manage-tasks-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* 12px */
+}
+.hidden-flex-small {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hidden-flex-small {
+    display: flex;
+  }
+}
+
+.grid-columns-responsive {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* equivalent to gap-4 */
+  margin-top: 1rem; /* equivalent to mt-4 */
+}
+
+@media (min-width: 768px) {
+  .grid-cols-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

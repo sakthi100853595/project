@@ -1,0 +1,108 @@
+.top {
+  margin-top: 1.25rem; /* or 20px */
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .top-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid-colum-span {
+  grid-column: span 3 / span 3;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-size {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500;
+}
+.flex-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* 1.5 * 4px */
+  font-size: 13px;
+  font-weight: 500;
+  color: #f43f5e; /* rose-500 */
+  background-color: #fff1f2; /* rose-50 */
+  border-radius: 0.25rem; /* rounded */
+  padding: 0.25rem 0.5rem; /* py-1 px-2 */
+  border: 1px solid #ffe4e6; /* rose-100 */
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.flex-badge:hover {
+  border-color: #fda4af; /* rose-300 */
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+}
+
+.task-title-top {
+  margin-top: 1rem;
+}
+
+.task-label {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500; /* medium */
+  color: #475569; /* slate-600 */
+}
+.description-title-top {
+  margin-top: 0.75rem; /* or 12px */
+}
+.grid-priority {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem; /* gap-4 = 16px */
+  margin-top: 0.5rem; /* mt-2 = 8px */
+}
+.col-span-custom {
+  grid-column: span 6 / span 6;
+}
+
+@media (min-width: 768px) {
+  .col-span-custom {
+    grid-column: span 4 / span 4;
+  }
+}
+
+.text-style {
+  font-size: 0.75rem; /* text-xs = 12px */
+  font-weight: 500; /* font-medium */
+  color: #475569; /* text-slate-600 */
+}
+
+.grid-col-span {
+  grid-column: span 12 / span 12;
+}
+
+@media (min-width: 768px) {
+  .grid-col-span {
+    grid-column: span 3 / span 3;
+  }
+}
+
+.error-text {
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500; /* font-medium */
+  color: #ef4444; /* text-red-500 */
+  margin-top: 1.25rem; /* mt-5 = 20px */
+}
+
+.error-flex-end {
+  display: flex; /* flex */
+  justify-content: flex-end; /* justify-end */
+  margin-top: 1.75rem; /* mt-7 = 28px */
+}

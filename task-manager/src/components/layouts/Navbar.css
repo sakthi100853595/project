@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  gap: 1.25rem;
+  background-color: white;
+  border: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgba(229, 231, 235, 0.5);
+  backdrop-filter: blur(2px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.menu-toggle {
+  display: block;
+  color: black;
+}
+
+/* Hide on large screens (lg = 1024px in Tailwind) */
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.heading-large {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-block {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: black;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 61px;
+  margin-left: -1rem;
+  background-color: white;
+}

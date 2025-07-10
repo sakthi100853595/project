@@ -1,0 +1,70 @@
+.status-tab-top {
+  margin-top: 0.5rem; /* 8px */
+  margin-bottom: 0.5rem;
+}
+.status-tab-container {
+  display: flex;
+}
+.tab-button {
+  position: relative;
+  padding-left: 0.75rem; /* px-3 */
+  padding-right: 0.75rem;
+  padding-top: 0.5rem; /* py-2 */
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .tab-button {
+    padding-left: 1rem; /* md:px-4 */
+    padding-right: 1rem;
+  }
+}
+
+/* Conditional classes based on active tab (you’ll apply this dynamically in JS or React logic) */
+.tab-button.active {
+  color: #9f2b68; /* Replace with your primary color */
+}
+
+.tab-button.inactive {
+  color: #6b7280; /* Tailwind's gray-500 */
+}
+
+.tab-button.inactive:hover {
+  color: #374151; /* Tailwind's gray-700 */
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.span-text {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+.tab-badge {
+  font-size: 0.75rem; /* text-xs */
+  margin-left: 0.5rem; /* ml-2 */
+  padding: 0.125rem 0.5rem; /* py-0.5 px-2 */
+  border-radius: 9999px; /* rounded-full */
+}
+
+.tab-badge-active {
+  background-color: #9f2b68; /* assuming --primary is defined */
+  color: white;
+}
+
+.tab-badge-inactive {
+  background-color: rgba(229, 231, 235, 0.7); /* bg-gray-200/70 */
+  color: #4b5563; /* text-gray-600 */
+}
+.tab-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem; /* h-0.5 */
+  background-color: var(--primary); /* Assuming --primary is defined */
+}

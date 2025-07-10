@@ -1,0 +1,32 @@
+.my-tasks-section-spacing {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.header-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .header-flex {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.text-size {
+  font-size: 1.25rem; /* equivalent to text-xl */
+  font-weight: 500; /* equivalent to font-medium */
+}
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* 1rem = 16px, equivalent to gap-4 */
+  margin-top: 1rem; /* mt-4 */
+}
+
+@media (min-width: 768px) {
+  .custom-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

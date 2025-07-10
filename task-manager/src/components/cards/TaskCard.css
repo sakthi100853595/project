@@ -1,0 +1,157 @@
+.in-progress-status {
+  color: #9f2b68; /* cyan-500 */
+  background-color: #ecfeff; /* cyan-50 */
+  border: 1px solid rgba(6, 182, 212, 0.1); /* cyan-500 with opacity 0.1 */
+}
+.completed-status {
+  color: #84cc16; /* lime-500 */
+  background-color: #f7fee7; /* lime-50 */
+  border: 1px solid rgba(132, 204, 22, 0.2); /* lime-500 with opacity 0.2 */
+}
+.default-status {
+  color: #8b5cf6; /* violet-500 */
+  background-color: #f5f3ff; /* violet-50 */
+  border: 1px solid rgba(139, 92, 246, 0.1); /* violet-500 with opacity 0.1 */
+}
+.low-priority {
+  color: #10b981; /* emerald-500 */
+  background-color: #d1fae5; /* emerald-50 */
+  border: 1px solid rgba(16, 185, 129, 0.1); /* emerald-500 with opacity 0.1 */
+}
+.medium-priority {
+  color: #f59e0b; /* amber-500 */
+  background-color: #fef3c7; /* amber-50 */
+  border: 1px solid rgba(245, 158, 11, 0.1); /* amber-500 with opacity 0.1 */
+}
+.high-priority {
+  color: #f43f5e; /* rose-500 */
+  background-color: #fef2f2; /* rose-50 */
+  border: 1px solid rgba(244, 63, 94, 0.1); /* rose-500 with opacity 0.1 */
+}
+.task-card-structure {
+  background-color: white;
+  border-radius: 1rem; /* Equivalent to rounded-xl */
+  padding-top: 1rem; /* Equivalent to py-4 */
+  padding-bottom: 1rem; /* Equivalent to py-4 */
+  box-shadow: 0 4px 6px rgba(100, 100, 100, 0.1); /* Equivalent to shadow-md with shadow-gray-100 */
+  border: 1px solid rgba(169, 169, 169, 0.5); /* Equivalent to border-gray-200/50 */
+  cursor: pointer; /* Makes it clickable */
+}
+.task-card-flex-container {
+  display: flex;
+  align-items: flex-end; /* Equivalent to items-end */
+  gap: 0.75rem; /* Equivalent to gap-3 (3 = 0.75rem) */
+  padding-left: 1rem; /* Equivalent to px-4 */
+  padding-right: 1rem; /* Equivalent to px-4 */
+}
+.status-container {
+  font-size: 11px; /* Equivalent to text-[11px] */
+  font-weight: 500; /* Equivalent to font-medium */
+  padding-left: 1rem; /* Equivalent to px-4 */
+  padding-right: 1rem; /* Equivalent to px-4 */
+  padding-top: 0.125rem; /* Equivalent to py-0.5 */
+  padding-bottom: 0.125rem; /* Equivalent to py-0.5 */
+  border-radius: 0.25rem; /* Equivalent to rounded */
+}
+.priority-container {
+  font-size: 11px; /* Equivalent to text-[11px] */
+  font-weight: 500; /* Equivalent to font-medium */
+  padding-left: 1rem; /* Equivalent to px-4 */
+  padding-right: 1rem; /* Equivalent to px-4 */
+  padding-top: 0.125rem; /* Equivalent to py-0.5 */
+  padding-bottom: 0.125rem; /* Equivalent to py-0.5 */
+  border-radius: 0.25rem; /* Equivalent to rounded */
+}
+.status-border {
+  padding-left: 1rem; /* Equivalent to px-4 */
+  padding-right: 1rem; /* Equivalent to px-4 */
+  border-left-width: 3px; /* Equivalent to border-l-[3px] */
+}
+.in-progress-status-border {
+  border-color: #06b6d4; /* Equivalent to border-cyan-500 */
+}
+.completed-status-border {
+  border-color: #6366f1; /* Equivalent to border-indigo-500 */
+}
+.default-status-border {
+  border-color: #8b5cf6; /* Equivalent to border-violet-500 */
+}
+.title {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #2d3748; /* text-gray-800 */
+  margin-top: 1rem; /* mt-4 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.description {
+  font-size: 0.75rem; /* text-xs */
+  color: #6b7280; /* text-gray-500 */
+  margin-top: 0.375rem; /* mt-1.5 */
+  line-height: 18px; /* leading-[18px] */
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* line-clamp-2 */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.task-done {
+  font-size: 13px;
+  color: rgba(55, 65, 81, 0.8); /* text-gray-700/80 */
+  font-weight: 500; /* font-medium */
+  margin-top: 0.5rem; /* mt-2 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  line-height: 18px; /* leading-[18px] */
+}
+.span-text {
+  font-weight: 600; /* font-semibold */
+  color: #374151; /* text-gray-700 */
+}
+.extras {
+  padding-left: 1rem; /* px-4 = 16px */
+  padding-right: 1rem;
+}
+.duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.25rem; /* my-1 = 4px */
+  margin-bottom: 0.25rem;
+}
+.date {
+  font-size: 0.75rem; /* 12px */
+  color: #6b7280; /* Tailwind's gray-500 */
+}
+.date-text {
+  font-size: 13px;
+  font-weight: 500; /* medium */
+  color: #111827; /* Tailwind's gray-900 */
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75rem; /* Tailwind's mt-3 = 12px */
+}
+.attachment-container {
+  display: flex;
+  align-items: center; /* Vertically centers the child elements */
+  gap: 0.5rem; /* 8px gap between items */
+  background-color: #eff6ff; /* Light blue background (Tailwind's bg-blue-50) */
+  padding-left: 0.625rem; /* 10px padding on left */
+  padding-right: 0.625rem; /* 10px padding on right */
+  padding-top: 0.375rem; /* 6px padding on top */
+  padding-bottom: 0.375rem; /* 6px padding on bottom */
+  border-radius: 0.5rem; /* Large rounded corners (Tailwind's rounded-lg) */
+}
+.text-color {
+  color: #9f2b68; /* Replace with the primary color you'd like to use */
+}
+.text-span {
+  font-size: 0.75rem; /* 12px */
+  color: #1a202c; /* Dark gray color */
+}

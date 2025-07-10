@@ -1,0 +1,30 @@
+.barchart-card-style {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.5rem; /* p-2 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+}
+
+.barchart-text-style {
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  color: #6b21a8; /* text-purple-800 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.barchart-small-text {
+  font-size: 0.875rem; /* text-sm */
+  color: #4b5563; /* text-gray-600 */
+}
+
+.barchart-span-text-style {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500; /* Medium */
+  color: #111827; /* Tailwind's gray-900 */
+}
+
+.barchart {
+  background-color: #ffffff;
+  margin-top: 1.5rem; /* 24px */
+}

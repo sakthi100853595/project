@@ -1,0 +1,158 @@
+.in-progress-status-styles {
+  color: #06b6d4; /* text-cyan-500 */
+  background-color: #ecfeff; /* bg-cyan-50 */
+  border: 1px solid rgba(6, 182, 212, 0.1); /* border-cyan-500/10 */
+}
+.completed-status-styles {
+  color: #84cc16; /* text-lime-500 */
+  background-color: #f7fee7; /* bg-lime-50 */
+  border: 1px solid rgba(132, 204, 22, 0.2); /* border-lime-500/20 */
+}
+.default-status-styles {
+  color: #7e22ce; /* text-violet-500 */
+  background-color: #f5f3ff; /* bg-violet-50 */
+  border: 1px solid rgba(126, 34, 206, 0.1); /* border-violet-500/10 */
+}
+.my-tasks-section-spacing {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.custom-grid-style {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+  margin-top: 1rem; /* mt-4 */
+}
+
+@media (min-width: 768px) {
+  .custom-grid-style {
+    grid-template-columns: repeat(4, 1fr); /* md:grid-cols-4 */
+  }
+}
+.column {
+  grid-column: span 3; /* col-span-3 */
+}
+.flex-between-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-responsive {
+  font-size: 0.875rem; /* Default text size (14px) */
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .text-responsive {
+    font-size: 1.25rem; /* Medium and above (20px) */
+  }
+}
+.text-custom {
+  font-size: 11px; /* Default font size (11px) */
+  font-weight: 500; /* Medium font weight */
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+  padding-top: 0.125rem; /* 2px */
+  padding-bottom: 0.125rem; /* 2px */
+  border-radius: 0.375rem; /* 6px */
+}
+
+@media (min-width: 768px) {
+  .text-custom {
+    font-size: 13px; /* For medium screen and above (13px) */
+  }
+}
+.description-section-margin {
+  margin-top: 1rem; /* 16px */
+}
+.description-grid-custom {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem; /* 16px */
+  margin-top: 1rem; /* 16px */
+}
+.column-length {
+  grid-column: span 6; /* Default for smaller screens */
+}
+
+@media (min-width: 768px) {
+  /* For medium screens (md) and above */
+  .column-length {
+    grid-column: span 4;
+  }
+}
+.todo-checklist-top {
+  margin-top: 0.5rem; /* 2 spacing units in Tailwind is typically 0.5rem */
+}
+.font-properties {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500;
+  color: #64748b; /* Slate color */
+}
+.attachments-top {
+  margin-top: 0.5rem; /* 2 spacing units in Tailwind is typically 0.5rem */
+}
+.infobox-properties {
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151; /* Gray color */
+  margin-top: 0.125rem; /* 0.5px */
+}
+
+@media (min-width: 768px) {
+  .infobox-properties {
+    font-size: 13px;
+  }
+}
+.todo-checklist-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* 3 = 0.75rem */
+  padding: 0.75rem; /* 3 = 0.75rem */
+}
+.todo-checklist-input-field {
+  width: 1rem; /* w-4 = 1rem */
+  height: 1rem; /* h-4 = 1rem */
+  color: #9f2b68; /* text-primary (you can define --primary-color in your CSS variables or directly use a hex/rgb value) */
+  background-color: #f3f4f6; /* bg-gray-100 */
+  border-color: #d1d5db; /* border-gray-300 */
+  border-radius: 0.125rem; /* rounded-sm */
+  outline: none; /* outline-none */
+  cursor: pointer; /* cursor-pointer */
+}
+.todo-checklist-text {
+  font-size: 13px; /* text-[13px] */
+  color: #2d3748; /* text-gray-800 (hex code equivalent) */
+}
+.attachment-container {
+  display: flex; /* flex */
+  justify-content: space-between; /* justify-between */
+  background-color: #f9fafb; /* bg-gray-50 (hex code equivalent) */
+  border: 1px solid #f3f4f6; /* border-gray-100 (hex code equivalent) */
+  padding-left: 12px; /* px-3 */
+  padding-right: 12px; /* px-3 */
+  padding-top: 8px; /* py-2 */
+  padding-bottom: 8px; /* py-2 */
+  border-radius: 0.375rem; /* rounded-md */
+  margin-bottom: 12px; /* mb-3 */
+  margin-top: 8px; /* mt-2 */
+  cursor: pointer; /* cursor-pointer */
+}
+.attachment-flex {
+  flex: 1; /* flex-1 */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 12px; /* gap-3 (assuming 1rem = 16px, 3 * 4px = 12px) */
+}
+.attachment-span-text {
+  font-size: 12px; /* text-xs */
+  color: #9ca3af; /* text-gray-400 */
+  font-weight: 600; /* font-semibold */
+  margin-right: 8px; /* mr-2 (2 * 4px = 8px) */
+}
+.attachment-para-text {
+  font-size: 12px; /* text-xs */
+  color: #000000; /* text-black */
+}
+.custom-text-gray {
+  color: #9ca3af; /* text-gray-400 */
+}

@@ -1,0 +1,93 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 1rem);
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.2); /* Tailwind's bg-black/20 */
+  background-blend-mode: overlay;
+}
+.modal-container {
+  position: relative;
+  padding: 1rem; /* Tailwind's p-4 */
+  width: 100%;
+  max-width: 42rem; /* Tailwind's max-w-2xl = 672px */
+  max-height: 100%;
+}
+.modal-content {
+  position: relative;
+  background-color: white;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+
+  /* Optional for dark mode */
+  /* If using dark mode toggle with a class */
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem; /* p-4 */
+  border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+  border-top-left-radius: 0.5rem; /* rounded-t */
+  border-top-right-radius: 0.5rem;
+}
+
+/* Responsive padding for md:p-5 */
+@media (min-width: 768px) {
+  .modal-header {
+    padding: 1.25rem; /* md:p-5 */
+  }
+}
+.modal-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  color: #111827; /* text-gray-900 */
+}
+
+.modal-close-btn {
+  color: #9ca3af; /* text-gray-400 */
+  background-color: transparent;
+  border-radius: 0.5rem; /* rounded-lg */
+  font-size: 0.875rem; /* text-sm */
+  width: 2rem; /* w-8 */
+  height: 2rem; /* h-8 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.modal-close-btn:hover {
+  background-color: #e5e7eb; /* hover:bg-gray-200 */
+  color: #111827; /* hover:text-gray-900 */
+}
+.small-icon {
+  width: 0.75rem; /* 12px */
+  height: 0.75rem; /* 12px */
+}
+.modal-body {
+  padding: 1rem; /* p-4 = 16px */
+
+  /* Responsive padding for medium devices and up */
+}
+
+@media (min-width: 768px) {
+  .modal-body {
+    padding: 1.25rem; /* md:p-5 = 20px */
+  }
+}
+
+/* space-y-4 = vertical spacing between children */
+.modal-body > * + * {
+  margin-top: 1rem; /* 16px */
+}
